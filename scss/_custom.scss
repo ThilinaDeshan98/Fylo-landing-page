@@ -1,0 +1,32 @@
+// theme colors
+$very-dark-blue: #070439;
+$desaturated-blue: #585989;
+
+// accent colors
+$btn-color: hsl(224, 93%, 58%);
+$info-color: hsl(170, 45%, 43%);
+
+
+// white and gray colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// primary and secondary colors
+$primary:       $very-dark-blue;
+$secondary:     $desaturated-blue;
+
+// 
+$success:       $btn-color;
+$info:          $info-color;
+
+// IMPORT BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

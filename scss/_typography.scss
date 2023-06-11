@@ -1,0 +1,113 @@
+@use './custom' as *;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: $very-dark-blue;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 1rem;
+    
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2.3rem;
+        line-height: 1.5;
+        text-align: start;
+    }
+}
+
+.subtitle {
+    font-family: 'Open Sans', sans-serif;
+    color: $very-dark-blue;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1.2rem 0;
+    
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.1rem;
+        text-align: start;
+    }
+}
+
+.title-2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: $very-dark-blue;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 1.5rem;
+
+    @include media-breakpoint-up(lg) {
+        text-align: start;
+    }
+}
+
+.subtitle-2 {
+    color: $secondary;
+    text-align: start;
+
+    @include media-breakpoint-up(lg) {
+        
+    }
+}
+
+.info-card {
+    &__paragraph {
+        font-family: 'Open Sans', sans-serif;
+        color: $primary;
+    }
+
+    .avatar__details {
+        .avatar-name {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            color: $very-dark-blue;
+            position: relative;
+            top: 1rem;
+        }
+
+        .avatar-occupation {
+            font-family: 'Open Sans', sans-serif;
+            color: $secondary;
+            font-size: .8rem;
+        }
+    }
+}
+
+.early-access {
+    .subtitle-3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        width: 85%;
+        margin: 1rem auto 0 auto;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            text-align: left;
+            margin: 0;
+        }
+    }
+}
+
+.about-us, .contact-us {
+    ul {
+        li {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.phone-number, .email-address {
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}

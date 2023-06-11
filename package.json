@@ -1,0 +1,25 @@
+{
+  "name": "fylo-landing-page",
+  "version": "1.0.0",
+  "description": "Fylo landing page made with Bootstrap 5",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5",
+    "sass"
+  ],
+  "author": "Thilina Deshan",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.3.0-alpha3",
+    "postcss-cli": "^10.1.0"
+  }
+}

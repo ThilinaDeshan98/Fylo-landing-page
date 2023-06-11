@@ -1,0 +1,80 @@
+@use './custom' as *;
+
+.footer {
+    padding: 2rem;
+
+    &__logo {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-details {
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0;
+        }
+
+        .phone-number, .email-address {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: white;
+    
+            p {
+                position: relative;
+                top: .5rem;
+            }
+        }
+    
+        .about-us, .contact-us {
+            ul {
+                margin-left: -2rem;
+                margin-top: 2rem;
+
+                @include media-breakpoint-up(lg) {
+                    margin: 0;
+                }
+    
+                li {
+                    color: white;
+                    list-style: none;
+                    padding: 0;
+                    text-decoration: none;
+                    margin-bottom: 1rem;
+                } 
+            }
+    
+            
+        }
+    
+        .contact-us {
+            margin-bottom: 2rem;
+        }
+    
+        .socials {
+            a {
+                text-decoration: none;
+    
+                svg {
+                    fill: white;
+    
+                    &:hover {
+                        fill: $info;
+                    }
+                    
+                }
+    
+                &:hover {
+                    transform: scale(1.2);
+                    transition: ease-in-out;
+    
+                }
+            }
+    
+    
+        }
+    }
+}

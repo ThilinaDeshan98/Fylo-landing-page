@@ -1,0 +1,21 @@
+@use './custom' as *;
+
+
+ul {
+    gap: 1rem;
+
+    @include media-breakpoint-up(md) {
+        gap: 1.5rem;
+    }
+
+    li {
+        font-size: 1rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        color: $primary;
+
+        @include media-breakpoint-down(sm) {
+            font-size: .8rem;
+        }
+    }
+}
